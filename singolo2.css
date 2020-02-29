@@ -37,6 +37,7 @@
 
 .portfolio__menu--title{
     margin-top: 0;
+    margin-bottom: 0;
     display: flex;
     list-style: none;
     flex-wrap: wrap;
@@ -46,13 +47,88 @@
     padding: 1px 5px 1px 7px;
     margin-right: 10px;
     margin-top: 11px;
-    border: 1px solid #767e9e;
+    border: 1px solid #666d89;
     border-radius: 5px;
     font-size: 12px;
     font-family: 'Lato';
-    color: #767e9e;
+    color: #666d89;
     font-weight: 400;
     line-height: 18.5px;
+    text-align: justify;
+}
+
+.portfolio__menu--element:hover{
+    border: 1px solid #c5c5c5;
+    color: #c5c5c5;
+    cursor: pointer;
+    transition-property: color;
+}
+
+.portfolio__image{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio__image--element {
+    width: 220px;
+    height: 187px;
+    overflow: hidden;
+    margin-top: 18px;
+    margin-bottom: 2px;
+}
+
+.pic1{
+    margin-top: -10px;
+    margin-left: -8px; 
+}
+
+.pic2{
+    margin-top: -42px;
+    margin-left: -82px;
+}
+.pic3{
+    margin-left: -11px; 
+}
+
+.pic4{
+    margin-left: -25px;
+}
+.pic5{
+    margin-top: -15px;
+    margin-left: -10px;
+}
+
+.pic6{
+    margin-top: -3px;
+    margin-left: -16px;
+}
+.pic7{
+    margin-top: -38px;
+    margin-left: -31px; 
+}
+
+.pic8{
+    margin-top: -31px;
+    margin-left: -24px;
+}
+.pic9{
+    margin-top: -1px;
+    margin-left: -16px;
+}
+
+.pic10{
+    margin-top: -112px;
+    margin-left: -141px;
+}
+.pic11{
+    margin-top: -174px;
+    margin-left: -144px;
+}
+
+.pic12{
+    margin-top: -59px;
+    margin-left: -36px;
 }
 
 @font-face {
