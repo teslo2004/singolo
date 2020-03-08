@@ -244,6 +244,8 @@
 .portfolio__title h2,
 .about__title{
     padding-top: 70px;
+     
+    padding-bottom: 20px;
     font-size: 30px; 
     font-family: 'Lato';
     color: #666d89;   
@@ -255,6 +257,7 @@
 .portfolio__text p,
 .about__text{
     font-size: 18px; 
+    padding-bottom: 20px;
     font-family: 'Lato';
     color: #767e9e;   
     font-weight: 300;
