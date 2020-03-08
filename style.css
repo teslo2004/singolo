@@ -401,6 +401,10 @@
     text-align: justify
 }
 
+.about__face-social:hover{
+    cursor: pointer;  
+}
+
 .about__face-social img{
     padding-right: 4px;
 }
