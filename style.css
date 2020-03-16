@@ -112,6 +112,7 @@
     z-index: 2;
     background-image: url(./assets/layer.png);
     clip: rect(134px 202px 467px 14px);
+    cursor: pointer;
 }
 
 .iphone__vertical{ 
@@ -119,6 +120,7 @@
     top: 53px;
     left: 112px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .shadow{
@@ -134,6 +136,7 @@
     z-index: 2;    
     background-image: url(./assets/layer2.png);
     clip: rect(120px 458px 309px 124px);
+    cursor: pointer;
 }
 
 .iphone__horizontal{ 
@@ -143,6 +146,7 @@
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     z-index: 1;
+    cursor: pointer;
 }
 
 .shadow2{
@@ -150,6 +154,11 @@
     top: 174px;
     left: 426px;
 }
+
+.screen__off{
+    display: none;
+}
+
 
 .slide-2{
     position: absolute;
