@@ -318,6 +318,13 @@
     transition-property: color;
 }
 
+.active__element{
+    border: 1px solid #c5c5c5;
+    color: #c5c5c5;
+    cursor: pointer;
+    transition-property: color;
+}
+
 .portfolio__image{
     display: flex;
     max-height: 620px;

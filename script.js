@@ -2,8 +2,9 @@
 
 const MENU = document.getElementById('header__menu');
 MENU.addEventListener('click', (e) => {
+    if(e.target.nodeName == "A"){
     MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
-    e.target.classList.add('active');
+    e.target.classList.add('active');}
 });
 
 //Slider
@@ -54,3 +55,12 @@ function onClickHorizontalScreen(){
        HORIZONTAL.classList.toggle('screen__off');
    }  
 }
+
+//Portfolio
+
+const PORTFOLIO = document.getElementById('portfolio__menu--title');
+PORTFOLIO.addEventListener('click', (e) =>{
+    if(e.target.nodeName == "LI"){
+    PORTFOLIO.querySelectorAll('li').forEach(el => el.classList.remove('active__element'));
+    e.target.classList.add('active__element')}
+})
