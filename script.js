@@ -6,8 +6,8 @@ MENU.addEventListener('click', (e) => {
 
 const NEXT = document.getElementById('nextImg');
 const PREV = document.getElementById('prevImg');
-var FIRST = document.getElementById('slide-1');
-var SECOND = document.getElementById('slide-2')
+const FIRST = document.getElementById('slide-1');
+const SECOND = document.getElementById('slide-2')
 
 NEXT.addEventListener('click', onNextBtnClick);
 PREV.addEventListener('click', onPrevBtnClick);
@@ -21,7 +21,7 @@ function onNextBtnClick() {
 }
 
 function onPrevBtnClick(){
-    if (NEXT.click) {
+    if (PREV.click) {
         FIRST.classList.toggle('slider__active');
         SECOND.classList.toggle('slider__active');
     } 
