@@ -57,10 +57,39 @@ function onClickHorizontalScreen(){
 }
 
 //Portfolio
-
+const PORTFOLIO_ELEM = document.querySelectorAll('.portfolio__image--element');
 const PORTFOLIO = document.getElementById('portfolio__menu--title');
 PORTFOLIO.addEventListener('click', (e) =>{
     if(e.target.nodeName == "LI"){
     PORTFOLIO.querySelectorAll('li').forEach(el => el.classList.remove('active__element'));
-    e.target.classList.add('active__element')}
+    e.target.classList.add('active__element')
+    if (event.target.classList[1] == 'remove') {
+        PORTFOLIO_ELEM[0].classList.remove('portfolio__image--remove');
+        PORTFOLIO_ELEM[1].classList.remove('portfolio__image--remove');
+        PORTFOLIO_ELEM[2].classList.remove('portfolio__image--remove');
+        PORTFOLIO_ELEM[3].classList.remove('portfolio__image--remove');
+    };
+    if (event.target.classList[1] == 'remove2') {
+        PORTFOLIO_ELEM[0].classList.add('portfolio__image--remove');
+        PORTFOLIO_ELEM[1].classList.add('portfolio__image--remove');
+        PORTFOLIO_ELEM[2].classList.add('portfolio__image--remove');
+        PORTFOLIO_ELEM[3].classList.add('portfolio__image--remove');
+    };
+    if (event.target.classList[1] == 'remove3') {
+        PORTFOLIO_ELEM[3].classList.add('portfolio__image--remove');
+        PORTFOLIO_ELEM[2].classList.remove('portfolio__image--remove');
+        PORTFOLIO_ELEM[1].classList.remove('portfolio__image--remove');
+        PORTFOLIO_ELEM[0].classList.add('portfolio__image--remove');
+    };
+    if (event.target.classList[1] == 'remove4') {
+        PORTFOLIO_ELEM[0].classList.add('portfolio__image--remove');
+        PORTFOLIO_ELEM[1].classList.add('portfolio__image--remove');
+        PORTFOLIO_ELEM[2].classList.add('portfolio__image--remove');
+        PORTFOLIO_ELEM[3].classList.remove('portfolio__image--remove');
+    };
+}
 })
+
+
+
+

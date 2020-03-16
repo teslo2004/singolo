@@ -394,6 +394,15 @@
     margin-left: -36px;
 }
 
+.portfolio__image--remove {
+    order: 1;
+}
+
+.active__element--border{
+    position: absolute;
+    outline: 5px solid #f06c64;
+}
+
 .about{
     max-height: 729px;
     background-color: #f2f2f2;
