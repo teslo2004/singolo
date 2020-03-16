@@ -151,16 +151,29 @@
     left: 426px;
 }
 
+.slide-2{
+    position: absolute;
+    left: 0;
+    display: none;
+    z-index: 9;
+}
+
+.slider__active{
+    display: block;
+}
+
 .slider__button--prev{
     position: absolute;
     top: 280px;
     left: 42px;
+    z-index: 10;
 }
 
 .slider__button--next{
     position: absolute;
     top: 280px;
     right: 40px;
+    z-index: 10;
 }
 .slider__button--next :hover, 
 .slider__button--prev :hover{
