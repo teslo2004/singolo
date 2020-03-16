@@ -90,6 +90,21 @@ PORTFOLIO.addEventListener('click', (e) =>{
 }
 })
 
+var submit = document.getElementById('submit');
+submit.addEventListener('click', onSubmit)
 
+function onSubmit(){
+    var name = document.getElementById('name');
+    var email = document.getElementById('email');
+    var subject = document.getElementById('subject');
+    var textarea = document.getElementById('textarea');
+
+    if(name.value && email.value && subject.value && textarea.value==null){
+        alert(`Письмо отправлено\nТема: ${subject.value}\nБез описания`)
+    }
+    else if(name.value && email.value && subject.value && textarea.value){
+        alert(`Письмо отправлено\nТема: ${subject.value}\nОписание: ${textarea.value}`)
+    }
+}
 
 
