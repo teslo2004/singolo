@@ -90,6 +90,14 @@ PORTFOLIO.addEventListener('click', (e) =>{
 }
 })
 
+const PORTFOLIO_IMAGE = document.getElementById('portfolio__image')
+PORTFOLIO_IMAGE.addEventListener('click', (e) =>{
+    if(e.target.nodeName=='IMG'){
+    PORTFOLIO_IMAGE.querySelectorAll('img').forEach(el => el.classList.remove('active__element--border'));
+    e.target.classList.add('active__element--border');}
+})
+
+
 var submit = document.getElementById('submit');
 submit.addEventListener('click', onSubmit)
 
