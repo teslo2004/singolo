@@ -107,12 +107,29 @@ function onSubmit(){
     var subject = document.getElementById('subject');
     var textarea = document.getElementById('textarea');
 
-    if(name.value && email.value && subject.value && textarea.value==null){
-        alert(`Письмо отправлено\nТема: ${subject.value}\nБез описания`)
+    if(name.value && email.value && subject.value && textarea.value==''){
+        textarea.value = textarea.value.substring(1,10);
+        alert(`Письмо отправлено\nТема: ${subject.value}\nБез описания`);
+        
     }
     else if(name.value && email.value && subject.value && textarea.value){
-        alert(`Письмо отправлено\nТема: ${subject.value}\nОписание: ${textarea.value}`)
+        textarea.value = textarea.value.substring(1,10);
+        alert(`Письмо отправлено\nТема: ${subject.value}\nОписание: ${textarea.value}`);
+        
     }
+    else if(name.value && email.value && subject.value == '' && textarea.value){
+        textarea.value = textarea.value.substring(1,10);
+        alert(`Письмо отправлено\nТема: Без темы\nОписание: ${textarea.value}`);
+        
+    }
+    else if(name.value && email.value && subject.value == '' && textarea.value == ''){
+        alert(`Письмо отправлено\nТема: Без темы\nОписание: Без описания`);
+        
+    }
+        name.value = '';
+        email.value = '';
+        subject.value = '';
+        textarea.value = '';
 }
 
 
